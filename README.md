@@ -64,7 +64,7 @@ $$ X_{can}\vert_{\alpha_i(t)=p} = \sum_{j=1}^r \sum_{k=1}^m \beta^j_i(t) X_j^k\v
 where $\mathcal{N}$ is the manifold defined by wave equation in $2$-D, $\lbrace\beta^j(t)\rbrace_{j=1}^r$ are learnable coefficient functions, $\lbrace X_j \rbrace_{j=1}^r$ are right invariant and linearly independent vector fields spanning $\mathfrak{g}$, which are already learned, $t \in \mathbb{R}$ is the parameter defining $X_{can}$, and $\alpha_i(t)$ is the $i^{th}$ integral curve for $X_{can}$. In this experiment, we set $X_{can}$ to be the ***rotation in x-y plane***, which is one of twelve canonical symmetries pertaining to wave equation in $2$-D:
 
 $$
-R_{\text{xy}} = 
+X_{R_{\text{xy}}} = 
   \begin{bmatrix}
     0.0, & -1.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0 \\
     1.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0, & 0.0 \\
@@ -88,7 +88,7 @@ In the following figure, we show whether $\mathfrak{g}$ we learn, may reconstruc
 
 ## Animation for Group Actions
 
-In this subsection, we include some one-parameter subgroups' actions on the solution $u(x, y, t)$ of wave equation in $2$-D, i.e. $g_j^k.u(x, y, t) = \bar{u}^k(\bar{x}, \bar{y}, \bar{t})$, where $j=1,\dotsc,r=\text{dim}(\mathfrak{g})$, $k=1,\dotsc,K$ and $K$ is the total number of forward translations. We track and record a particular spatial plane at time step $t_0=0.068$ (the $8^{th}$ discrete time step). We display both forward and inverse actions in a subsequent manner for each of the subgroup listed below. From left-to-right and top-to-bottom, subgroups are numbered $3$, $5$, $7$, and $12$ respectively. $K=100$ for this simple animation.
+In this subsection, we include some one-parameter subgroups' actions on the solution $u(x, y, t)$ of wave equation in $2$-D, i.e. $g_j^k.u(x, y, t) = \bar{u}^k(\bar{x}, \bar{y}, \bar{t})$, where $j=1,\dotsc,r=\text{dim}(\mathfrak{g})$, $k=1,\dotsc,K$ and $K$ is the total number of forward translations. We track and record a particular spatial plane at time step $t_0=0.068$ (the $8^{th}$ discrete time step). We display both forward and inverse actions in a subsequent manner for each of the subgroup listed below. From left-to-right and top-to-bottom, subgroups are numbered $3$, $4$, $7$, and $10$ respectively. $K=100$ for this simple animation.
 
 ```diff
 -Note that, you may have to wait for a minute or so before all gif files are loaded and animated!
